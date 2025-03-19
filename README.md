@@ -1,2 +1,2 @@
-# HGT_Phylogeny
+# HGT Phylogeny
 Bioinformatics Project - 
