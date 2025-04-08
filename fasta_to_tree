@@ -1,0 +1,3 @@
+mafft --auto filtered_file2.fasta > aligned_file2.fasta
+trimal -in aligned_file2.fasta -out trimmed_file2.fasta -automated1
+iqtree -s trimmed_file2.fasta -m TEST -bb 1000 -nt AUTO
