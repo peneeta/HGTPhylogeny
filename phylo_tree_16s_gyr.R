@@ -1,9 +1,10 @@
 #install.packages("ape")
 #if (!require("BiocManager", quietly = TRUE))
 #  install.packages("BiocManager")
-install.packages("babette")
 
 #BiocManager::install("msa")
+install.packages("babette")
+
 
 library(ape)
 library(msa)
@@ -23,7 +24,6 @@ write.nexus.data(as.character(aligned_dnabin),
                  format = "dna")
 
 
-# "raw" is p-distance, other models available ERR - what did I download??
 distance_matrix <- dist.dna(aligned_dnabin, model = "raw")
 njs_tree <- nj(distance_matrix)
 write.tree(njs_tree, file = "test_nj_tree_silva.nwk")
