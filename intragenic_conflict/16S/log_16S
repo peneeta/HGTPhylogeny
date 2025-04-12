@@ -1,0 +1,177 @@
+IQ-TREE multicore version 2.4.0 for MacOS ARM 64-bit built Feb 12 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    Mac (SSE4.2, 16 GB RAM)
+Command: iqtree -nt 2 -m GTR+G -s ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta -alrt 1000 -nm 10000 -bb 1000 -redo
+Seed:    198023 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Apr 12 14:40:23 2025
+Kernel:  SSE2 - 2 threads (12 CPU cores detected)
+
+Reading alignment file ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta ... Fasta format detected
+Reading fasta file: done in 0.00112891 secs using 68.92% CPU
+Alignment most likely contains DNA/RNA sequences
+Alignment has 47 sequences with 1536 columns, 1011 distinct patterns
+746 parsimony-informative, 401 singleton sites, 389 constant sites
+                                   Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.4121e-05 secs using 149.7% CPU
+   1  Acinetobacter_baumannii_16s          0.13%    passed     93.25%
+   2  Acinetobacter_baylyi_16s             0.13%    passed     91.69%
+   3  Acinetobacter_radioresistens_16s     0.13%    passed     94.27%
+   4  Alteromonas_macleodii_16s            0.39%    passed     86.37%
+   5  Azospirillum_brasilense_16s          7.94%    failed      1.48%
+   6  Bacillus_anthracis_16s              42.06%    passed     96.30%
+   7  Bacillus_licheniformis_16s           0.07%    passed     55.07%
+   8  Bacillus_subtilis_16s               64.71%    passed     82.77%
+   9  Bifidobacterium_breve_16s            1.24%    failed      0.01%
+  10  Bradyrhizobium_japonicum_16s         3.45%    passed     43.31%
+  11  Burkholderia_cepacia_16s             0.52%    passed     70.04%
+  12  Chryseobacterium_gleum_16s           6.97%    passed     14.61%
+  13  Clostridium_perfringens_16s          2.08%    passed     71.63%
+  14  Clostridium_septicum_16s            72.85%    passed     45.27%
+  15  Cupriavidus_metallidurans_16s        0.59%    passed     66.22%
+  16  Enterococcus_mundtii_16s             0.00%    passed     96.27%
+  17  Erysipelothrix_rhusiopathiae_16s     0.98%    passed     12.00%
+  18  Escherichia_coli_O157                0.00%    passed     92.32%
+  19  Flavobacterium_johnsoniae_16s        2.08%    passed     38.66%
+  20  Klebsiella_pneumoniae_16s            0.00%    passed     88.89%
+  21  Lactobacillus_acidophilus_16s       12.37%    passed     92.23%
+  22  Lactobacillus_helveticus_16s         0.00%    passed     89.76%
+  23  Lactococcus_lactis_16s               0.20%    passed     38.65%
+  24  Legionella_pneumophila_16s           0.00%    passed     55.89%
+  25  Leptospira_biflexa_16s              17.71%    passed     15.53%
+  26  Listeria_ivanovii_16s                0.07%    passed     99.98%
+  27  Listeria_monocytogenes_16s           0.07%    passed     99.98%
+  28  Micrococcus_luteus_16s               1.56%    passed      7.22%
+  29  Mycobacterium_leprae_16s            85.29%    passed     30.31%
+  30  Neisseria_gonorrhoeae_16s            0.00%    passed     73.91%
+  31  Nocardia_asteroides_16s              9.70%    failed      1.14%
+  32  Pediococcus_acidilactici_16s         0.00%    passed     62.44%
+  33  Peptostreptococcus_anaerobius_16s   83.59%    passed     34.48%
+  34  Proteus_mirabilis_16s                0.07%    passed     77.04%
+  35  Providencia_stuartii_16s             0.00%    passed     90.49%
+  36  Pseudomonas_aeruginosa_16s           0.20%    passed     93.34%
+  37  Pseudomonas_fluorescens_16s          0.13%    passed     96.65%
+  38  Salmonella_enterica_16s              0.07%    passed     86.71%
+  39  Serratia_marcescens_16s              0.00%    passed     98.76%
+  40  Shewanella_oneidensis_16s           49.41%    passed     45.41%
+  41  Shigella_flexneri_16s                9.83%    passed     71.65%
+  42  Sphingomonas_paucimobilis_16s       19.34%    failed      0.00%
+  43  Staphylococcus_aureus_16s            0.07%    passed     23.62%
+  44  Streptococcus_mutans_16s             0.13%    passed     68.01%
+  45  Streptococcus_thermophilus_16s       0.20%    passed     72.01%
+  46  Vibrio_campbellii_16s                0.00%    passed     87.05%
+  47  Weissella_cibaria_16s                8.20%    passed     20.10%
+WARNING: 4 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                               10.73%  4 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 198023)...
+
+NOTE: 10 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -24784.344
+2. Current log-likelihood: -23464.119
+3. Current log-likelihood: -23384.459
+4. Current log-likelihood: -23384.239
+Optimal log-likelihood: -23384.203
+Rate parameters:  A-C: 0.82567  A-G: 1.99678  A-T: 1.41354  C-G: 0.69443  C-T: 3.44662  G-T: 1.00000
+Base frequencies:  A: 0.253  C: 0.227  G: 0.310  T: 0.210
+Gamma shape alpha: 0.401
+Parameters optimization took 4 rounds (0.216 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0029211 secs using 198.6% CPU
+Computing ML distances took 0.003060 sec (of wall-clock time) 0.005978 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 5.4121e-05 secs using 177.4% CPU
+Computing RapidNJ tree took 0.001204 sec (of wall-clock time) 0.001052 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -23773.767
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.393 second
+Computing log-likelihood of 98 initial trees ... 0.803 seconds
+Current best score: -23379.779
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -23337.406
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -23337.140
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -23335.695
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 6: -23334.668
+Iteration 10 / LogL: -23338.519 / Time: 0h:0m:3s
+Iteration 20 / LogL: -23385.057 / Time: 0h:0m:5s
+Finish initializing candidate tree set (15)
+Current best tree score: -23334.668 / CPU time: 4.864
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 21: -23329.023
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23: -23328.531
+Iteration 30 / LogL: -23329.488 / Time: 0h:0m:7s (0h:0m:23s left)
+Iteration 40 / LogL: -23339.502 / Time: 0h:0m:8s (0h:0m:18s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -23328.169
+Iteration 50 / LogL: -23330.571 / Time: 0h:0m:10s (0h:0m:16s left)
+Log-likelihood cutoff on original alignment: -23406.604
+Iteration 60 / LogL: -23329.489 / Time: 0h:0m:12s (0h:0m:13s left)
+Iteration 70 / LogL: -23329.842 / Time: 0h:0m:14s (0h:0m:11s left)
+Iteration 80 / LogL: -23329.491 / Time: 0h:0m:16s (0h:0m:8s left)
+Iteration 90 / LogL: -23330.226 / Time: 0h:0m:18s (0h:0m:6s left)
+Iteration 100 / LogL: -23328.745 / Time: 0h:0m:20s (0h:0m:4s left)
+Log-likelihood cutoff on original alignment: -23406.604
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Iteration 110 / LogL: -23329.025 / Time: 0h:0m:22s (0h:0m:18s left)
+Iteration 120 / LogL: -23329.104 / Time: 0h:0m:23s (0h:0m:16s left)
+TREE SEARCH COMPLETED AFTER 124 ITERATIONS / Time: 0h:0m:24s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -23328.169
+Optimal log-likelihood: -23328.162
+Rate parameters:  A-C: 0.84063  A-G: 2.04533  A-T: 1.47862  C-G: 0.71716  C-T: 3.53978  G-T: 1.00000
+Base frequencies:  A: 0.253  C: 0.227  G: 0.310  T: 0.210
+Gamma shape alpha: 0.396
+Parameters optimization took 1 rounds (0.025 sec)
+BEST SCORE FOUND : -23328.162
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.421 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta.splits.nex
+Total tree length: 15.392
+
+Total number of iterations: 124
+CPU time used for tree search: 29.391 sec (0h:0m:29s)
+Wall-clock time used for tree search: 24.159 sec (0h:0m:24s)
+Total CPU time used: 30.851 sec (0h:0m:30s)
+Total wall-clock time used: 25.073 sec (0h:0m:25s)
+
+Computing bootstrap consensus tree...
+Reading input file ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta.splits.nex...
+47 taxa and 240 splits.
+Consensus tree written to ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta.contree
+Reading input trees file ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta.contree
+Log-likelihood of consensus tree: -23337.845
+
+Analysis results written to: 
+  IQ-TREE report:                ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta.iqtree
+  Maximum-likelihood tree:       ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta.treefile
+  Likelihood distances:          ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta.splits.nex
+  Consensus tree:                ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta.contree
+  Screen log file:               ./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta.log
+
+Date and Time: Sat Apr 12 14:40:48 2025
