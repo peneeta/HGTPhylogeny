@@ -1,5 +1,5 @@
 # HGT Phylogeny
-Course Project for Fundamentals of Bioinformatics @ CMU
+Course Project for Fundamentals of Bioinformatics @ CMU\
 *Amanda Qi and Peneeta Wojcik*
 
 ## Project Description
