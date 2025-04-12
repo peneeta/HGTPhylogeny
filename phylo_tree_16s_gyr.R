@@ -11,7 +11,7 @@ setwd("~/go/bioinformatics/Project")
 
 
 # Use readDNAStringSet from Biostrings
-alignment_path = "./HGTPhylogeny/Data/rpoD_cds_all_bacteria.fasta"
+alignment_path = "./HGTPhylogeny/Data/subset_gyrA_cds_all_bacteria_conserved.fasta"
 dna_sequences <- readDNAStringSet(alignment_path)
 
 aligned <- msa(dna_sequences)
@@ -26,36 +26,18 @@ write.nexus.data(as.character(aligned_dnabin),
 # "raw" is p-distance, other models available ERR - what did I download??
 distance_matrix <- dist.dna(aligned_dnabin, model = "raw")
 njs_tree <- nj(distance_matrix)
+write.tree(njs_tree, file = "test_nj_tree_silva.nwk")
 
-plot(nj_tree)
+# Open the PNG device
+png(filename = "my_phylogenetic_tree.png", res = 150)
 
-write.tree(nj_tree, file = "test_nj_tree_silva.nwk")
+# Create your plot (with any desired customizations)
+plot(njs_tree, cex = 0.7, label.offset = 0.2)
+title("Phylogenetic Tree") # Add a title if you want
 
+# Close the graphics device
+dev.off()
 
-library(babette)
-
-alignment_path <- "./test_aligned.nex"
-alignment <- read.nexus.data(alignment_path)
-
-model <- create_inference_model(
-  alignment = alignment, 
-  clock_model = "strict",
-  partition_model = "fixed",
-  prior_model = "gamma",
-  MCMC = list(
-    length = 1000000,
-    iterations_per_tree = 1000))
-  
-# Run Bayesian inference
-result <- bbt_run_from_model(model)
-
-# Extract the optimal tree
-bayes_tree <- extract_tree(result)
-
-# Calculate branch posterior probabilities
-#branch_probs <- calculate_branch_probs(result)
-
-plot(bayes_tree)
 
 
   
