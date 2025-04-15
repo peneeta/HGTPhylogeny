@@ -26,6 +26,25 @@ trimal -in "$GYRA_ALIGN_PATH" -out "$GYRA_TRIMMED_PATH" -automated1
 # run conflict analysis w plot (sliding window)
 "$PHYND_PATH" -s "$GYRA_TRIMMED_PATH" -w 500 -i 100 -t 2 -p
 
+#### bla Gene ####
+
+BLA_PATH="./intragenic_conflict/bla/bla_cds_all_bacteria.fasta"
+BLA_ALIGN_PATH="./intragenic_conflict/bla/bla_aligned.fasta"
+BLA_TRIMMED_PATH="./intragenic_conflict/bla/bla_aligned_trimmed.fasta"
+PHYND_PATH="./phynd/src/phynd.py"
+
+# activate conda env
+conda activate phylo
+
+# perform alignment
+mafft --auto "$BLA_PATH" > "$BLA_ALIGN_PATH"
+
+# install trimal to remove poor sequence mappings
+#conda install bioconda::trimal
+trimal -in "$BLA_ALIGN_PATH" -out "$BLA_TRIMMED_PATH" -automated1
+
+# run conflict analysis w plot (sliding window)
+"$PHYND_PATH" -s "$BLA_TRIMMED_PATH" -w 500 -i 100 -t 2 -p
 
 #### 16S Gene ####
 
