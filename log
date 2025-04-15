@@ -3,108 +3,160 @@ Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
 Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
 
 Host:    Mac (SSE4.2, 16 GB RAM)
-Command: iqtree -nt 2 -m GTR+G -s ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.2 -alrt 1000 -nm 10000 -bb 1000 -redo
-Seed:    50123 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Mon Apr 14 21:13:29 2025
+Command: iqtree -nt 2 -m GTR+G -s ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta -alrt 1000 -nm 10000 -bb 1000 -redo
+Seed:    526685 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Apr 14 21:16:53 2025
 Kernel:  SSE2 - 2 threads (12 CPU cores detected)
 
-Reading alignment file ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.2 ... Fasta format detected
-Reading fasta file: done in 0.000297785 secs using 84.29% CPU
+Reading alignment file ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta ... Fasta format detected
+Reading fasta file: done in 0.00133586 secs using 77.48% CPU
 Alignment most likely contains DNA/RNA sequences
-Alignment has 46 sequences with 500 columns, 365 distinct patterns
-336 parsimony-informative, 28 singleton sites, 136 constant sites
+Alignment has 47 sequences with 2087 columns, 1704 distinct patterns
+1605 parsimony-informative, 123 singleton sites, 359 constant sites
                                     Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 1.81198e-05 secs using 126.9% CPU
-   1  Acinetobacter_baumannii_gyrA          0.00%    failed      4.04%
-   2  Acinetobacter_baylyi_gyrA             0.00%    passed     11.77%
-   3  Acinetobacter_radioresistens_gyrA     0.00%    passed     14.90%
-   4  Alteromonas_macleodii_gyrA            0.00%    passed     79.95%
+Analyzing sequences: done in 7.70092e-05 secs using 176.6% CPU
+   1  Acinetobacter_baumannii_gyrA          0.00%    failed      0.00%
+   2  Acinetobacter_baylyi_gyrA             0.00%    failed      0.00%
+   3  Acinetobacter_radioresistens_gyrA     0.00%    failed      0.02%
+   4  Alteromonas_macleodii_gyrA            0.00%    passed      6.66%
    5  Azospirillum_brasilense_gyrA          0.00%    failed      0.00%
    6  Bacillus_anthracis_gyrA               0.00%    failed      0.00%
-   7  Bacillus_licheniformis_gyrA           0.00%    passed     89.09%
-   8  Bacillus_subtilis_gyrA                0.00%    passed     62.72%
+   7  Bacillus_licheniformis_gyrA           0.00%    passed      6.83%
+   8  Bacillus_subtilis_gyrA                0.00%    failed      0.03%
    9  Bifidobacterium_breve_gyrA            0.00%    failed      0.00%
   10  Bradyrhizobium_japonicum_gyrA         0.00%    failed      0.00%
   11  Burkholderia_cepacia_gyrA             0.00%    failed      0.00%
-  12  Chryseobacterium_gleum_gyrA           0.00%    failed      1.30%
+  12  Chryseobacterium_gleum_gyrA           0.00%    failed      0.00%
   13  Clostridium_perfringens_gyrA          0.00%    failed      0.00%
   14  Clostridium_septicum_gyrA             0.00%    failed      0.00%
-  15  Cupriavidus_metallidurans_gyrA        0.00%    failed      3.01%
-  16  Enterococcus_mundtii_gyrA             0.00%    failed      1.05%
-  17  Erysipelothrix_rhusiopathiae_gyrA     0.00%    failed      0.00%
-  18  Escherichia_coli_O157                 0.00%    passed     26.50%
+  15  Cupriavidus_metallidurans_gyrA        0.00%    failed      0.00%
+  16  Enterococcus_mundtii_gyrA             0.00%    failed      0.00%
+  17  Erysipelothrix_rhusiopathiae_gyrA     0.10%    failed      0.00%
+  18  Escherichia_coli_O157                 0.00%    failed      0.01%
   19  Flavobacterium_johnsoniae_gyrA        0.00%    failed      0.00%
-  20  Klebsiella_pneumoniae_gyrA            0.00%    failed      0.39%
-  21  Lactobacillus_acidophilus_gyrA        0.00%    failed      0.03%
-  22  Lactobacillus_helveticus_gyrA         0.00%    failed      0.06%
-  23  Lactococcus_lactis_gyrA               0.00%    failed      2.86%
-  24  Legionella_pneumophila_gyrA           0.00%    failed      0.11%
-  25  Leptospira_biflexa_gyrA               0.00%    failed      1.15%
-  26  Listeria_ivanovii_gyrA                0.00%    failed      0.13%
-  27  Listeria_monocytogenes_gyrA           0.00%    failed      0.54%
+  20  Klebsiella_pneumoniae_gyrA            0.00%    failed      0.00%
+  21  Lactobacillus_acidophilus_gyrA        0.00%    failed      0.00%
+  22  Lactobacillus_helveticus_gyrA         0.00%    failed      0.00%
+  23  Lactococcus_lactis_gyrA               0.00%    failed      0.00%
+  24  Legionella_pneumophila_gyrA           0.00%    failed      0.00%
+  25  Leptospira_biflexa_gyrA               0.05%    failed      0.00%
+  26  Listeria_ivanovii_gyrA                0.00%    failed      0.00%
+  27  Listeria_monocytogenes_gyrA           0.00%    failed      0.00%
   28  Micrococcus_luteus_gyrA               0.00%    failed      0.00%
-  29  Neisseria_gonorrhoeae_gyrA            0.00%    failed      0.02%
-  30  Nocardia_asteroides_gyrA              0.00%    failed      0.00%
-  31  Pediococcus_acidilactici_gyrA         0.00%    passed     93.85%
-  32  Peptostreptococcus_anaerobius_gyrA    0.00%    passed      9.68%
-  33  Proteus_mirabilis_gyrA                0.00%    failed      4.60%
-  34  Providencia_stuartii_gyrA             0.00%    passed      9.95%
-  35  Pseudomonas_aeruginosa_gyrA           0.00%    failed      0.00%
-  36  Pseudomonas_fluorescens_gyrA          0.00%    failed      0.00%
-  37  Salmonella_enterica_gyrA              0.00%    passed     16.14%
-  38  Serratia_marcescens_gyrA              0.00%    failed      0.01%
-  39  Shewanella_oneidensis_gyrA            0.00%    passed     80.52%
-  40  Shigella_flexneri_gyrA                0.20%    passed     24.75%
-  41  Sphingomonas_paucimobilis_gyrA        0.00%    failed      0.00%
-  42  Staphylococcus_aureus_gyrA            0.00%    failed      0.00%
-  43  Streptococcus_mutans_gyrA             0.00%    failed      0.50%
-  44  Streptococcus_thermophilus_gyrA       0.00%    passed      5.09%
-  45  Vibrio_campbellii_gyrA                0.00%    passed     65.71%
-  46  Weissella_cibaria_gyrA                0.00%    passed     14.07%
-****  TOTAL                                 0.00%  31 sequences failed composition chi2 test (p-value<5%; df=3)
+  29  Mycobacterium_leprae_gyrA            89.36%    failed      1.98%
+  30  Neisseria_gonorrhoeae_gyrA            0.00%    failed      0.00%
+  31  Nocardia_asteroides_gyrA              0.00%    failed      0.00%
+  32  Pediococcus_acidilactici_gyrA         0.00%    passed     80.17%
+  33  Peptostreptococcus_anaerobius_gyrA    0.00%    failed      0.00%
+  34  Proteus_mirabilis_gyrA                0.00%    failed      0.00%
+  35  Providencia_stuartii_gyrA             0.00%    failed      0.27%
+  36  Pseudomonas_aeruginosa_gyrA           0.00%    failed      0.00%
+  37  Pseudomonas_fluorescens_gyrA          0.00%    failed      0.00%
+  38  Salmonella_enterica_gyrA              0.00%    failed      0.00%
+  39  Serratia_marcescens_gyrA              0.00%    failed      0.00%
+  40  Shewanella_oneidensis_gyrA            0.00%    passed     71.20%
+  41  Shigella_flexneri_gyrA                0.34%    failed      0.01%
+  42  Sphingomonas_paucimobilis_gyrA        0.00%    failed      0.00%
+  43  Staphylococcus_aureus_gyrA            0.00%    failed      0.00%
+  44  Streptococcus_mutans_gyrA             0.24%    failed      0.00%
+  45  Streptococcus_thermophilus_gyrA       0.00%    failed      0.00%
+  46  Vibrio_campbellii_gyrA                0.00%    passed     39.10%
+  47  Weissella_cibaria_gyrA                0.00%    failed      0.06%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                 1.92%  42 sequences failed composition chi2 test (p-value<5%; df=3)
 
-Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
-Generating 1000 samples for ultrafast bootstrap (seed: 50123)...
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 526685)...
 
-NOTE: 3 MB RAM (0 GB) is required!
+NOTE: 16 MB RAM (0 GB) is required!
 Estimate model parameters (epsilon = 0.100)
-1. Initial log-likelihood: -14412.319
-2. Current log-likelihood: -14071.819
-3. Current log-likelihood: -14066.676
-4. Current log-likelihood: -14066.480
-Optimal log-likelihood: -14066.449
-Rate parameters:  A-C: 1.74264  A-G: 3.34237  A-T: 2.95561  C-G: 2.44314  C-T: 5.03171  G-T: 1.00000
-Base frequencies:  A: 0.258  C: 0.240  G: 0.266  T: 0.236
-Gamma shape alpha: 0.553
-Parameters optimization took 4 rounds (0.095 sec)
+1. Initial log-likelihood: -67408.773
+2. Current log-likelihood: -65906.663
+3. Current log-likelihood: -65885.678
+4. Current log-likelihood: -65884.488
+Optimal log-likelihood: -65884.415
+Rate parameters:  A-C: 2.50985  A-G: 4.04598  A-T: 3.00824  C-G: 3.25617  C-T: 6.56123  G-T: 1.00000
+Base frequencies:  A: 0.280  C: 0.219  G: 0.262  T: 0.239
+Gamma shape alpha: 0.695
+Parameters optimization took 4 rounds (0.434 sec)
 Wrote distance file to... 
 Computing ML distances based on estimated model parameters...
-Calculating distance matrix: done in 0.00211406 secs using 192.5% CPU
-Computing ML distances took 0.002210 sec (of wall-clock time) 0.004144 sec (of CPU time)
-Setting up auxiliary I and S matrices: done in 4.88758e-05 secs using 188.2% CPU
-Computing RapidNJ tree took 0.001082 sec (of wall-clock time) 0.000880 sec (of CPU time)
-Log-likelihood of RapidNJ tree: -14129.643
+Calculating distance matrix: done in 0.00411105 secs using 192.9% CPU
+Computing ML distances took 0.004342 sec (of wall-clock time) 0.008210 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 7.41482e-05 secs using 174% CPU
+Computing RapidNJ tree took 0.001247 sec (of wall-clock time) 0.001090 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -66168.690
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Generating 98 parsimony trees... 0.273 second
-Computing log-likelihood of 98 initial trees ... 0.474 seconds
-Current best score: -14061.339
+Generating 98 parsimony trees... 0.531 second
+Computing log-likelihood of 98 initial trees ... 1.170 seconds
+Current best score: -65884.415
 
 Do NNI search on 20 best initial trees
 Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 1: -14045.830
-Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 4: -14044.810
-Iteration 10 / LogL: -14044.812 / Time: 0h:0m:1s
-Iteration 20 / LogL: -14045.148 / Time: 0h:0m:2s
-Finish initializing candidate tree set (12)
-Current best tree score: -14044.810 / CPU time: 1.993
+BETTER TREE FOUND at iteration 1: -65863.824
+Iteration 10 / LogL: -65865.005 / Time: 0h:0m:3s
+Iteration 20 / LogL: -65865.068 / Time: 0h:0m:4s
+Finish initializing candidate tree set (2)
+Current best tree score: -65863.824 / CPU time: 4.288
 Number of iterations: 20
 --------------------------------------------------------------------
 |               OPTIMIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Estimate model parameters (epsilon = 0.100)
-UPDATE BEST LOG-LIKELIHOOD: -14044.599
-Iteration 30 / LogL: -14044.820 / Time: 0h:0m:3s (0h:0m:8s left)
-Iteration 40 / LogL: -14044.914 / Time: 0h:0m:4s (0h:0m:6s left)
+Iteration 30 / LogL: -65889.675 / Time: 0h:0m:6s (0h:0m:17s left)
+Iteration 40 / LogL: -65869.348 / Time: 0h:0m:9s (0h:0m:14s left)
+Iteration 50 / LogL: -65865.083 / Time: 0h:0m:11s (0h:0m:11s left)
+Log-likelihood cutoff on original alignment: -65922.684
+Iteration 60 / LogL: -65869.781 / Time: 0h:0m:13s (0h:0m:9s left)
+Iteration 70 / LogL: -65864.242 / Time: 0h:0m:16s (0h:0m:7s left)
+Iteration 80 / LogL: -65867.869 / Time: 0h:0m:18s (0h:0m:4s left)
+Iteration 90 / LogL: -65889.044 / Time: 0h:0m:20s (0h:0m:2s left)
+Iteration 100 / LogL: -65865.478 / Time: 0h:0m:22s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -65922.515
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:23s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -65863.824
+Optimal log-likelihood: -65863.821
+Rate parameters:  A-C: 2.49770  A-G: 4.04447  A-T: 2.99096  C-G: 3.24612  C-T: 6.56242  G-T: 1.00000
+Base frequencies:  A: 0.280  C: 0.219  G: 0.262  T: 0.239
+Gamma shape alpha: 0.693
+Parameters optimization took 1 rounds (0.039 sec)
+BEST SCORE FOUND : -65863.821
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.583 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.splits.nex
+Total tree length: 11.699
+
+Total number of iterations: 102
+CPU time used for tree search: 29.833 sec (0h:0m:29s)
+Wall-clock time used for tree search: 22.752 sec (0h:0m:22s)
+Total CPU time used: 31.870 sec (0h:0m:31s)
+Total wall-clock time used: 23.977 sec (0h:0m:23s)
+
+Computing bootstrap consensus tree...
+Reading input file ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.splits.nex...
+47 taxa and 128 splits.
+Consensus tree written to ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.contree
+Reading input trees file ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.contree
+Log-likelihood of consensus tree: -65864.691
+
+Analysis results written to: 
+  IQ-TREE report:                ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.iqtree
+  Maximum-likelihood tree:       ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.treefile
+  Likelihood distances:          ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.splits.nex
+  Consensus tree:                ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.contree
+  Screen log file:               ./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta.log
+
+Date and Time: Mon Apr 14 21:17:17 2025
