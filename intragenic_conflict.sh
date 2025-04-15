@@ -24,7 +24,7 @@ mafft --auto "$GYRA_PATH" > "$GYRA_ALIGN_PATH"
 trimal -in "$GYRA_ALIGN_PATH" -out "$GYRA_TRIMMED_PATH" -automated1
 
 # run conflict analysis w plot (sliding window)
-"$PHYND_PATH" -s "$GYRA_TRIMMED_PATH" -w 500 -i 100 -t 2
+"$PHYND_PATH" -s "$GYRA_TRIMMED_PATH" -w 500 -i 100 -t 2 -p
 
 
 #### 16S Gene ####
@@ -45,4 +45,4 @@ mafft --auto "$RRNA_PATH" > "$RRNA_ALIGN_PATH"
 trimal -in "$RRNA_ALIGN_PATH" -out "$RRNA_TRIMMED_PATH" -automated1
 
 # run conflict analysis w plot (sliding window)
-"$PHYND_PATH" -s "$RRNA_TRIMMED_PATH" -w 500 -i 100 -t 2
+"$PHYND_PATH" -s "$RRNA_TRIMMED_PATH" -w 500 -i 100 -t 2 -p
