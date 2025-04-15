@@ -3,6 +3,9 @@
 # Intragenic Conflict Analysis
 # Run these as individual commands
 
+### IMPORTANT NOTE: Make sure your version of Go is 1.16 or lower to use phynd
+### (If you use the updated version, the bp command gets killed randomly)
+
 #### gyrA Gene ####
 
 GYRA_PATH="./intragenic_conflict/gyrA/subset_gyrA_cds_all_bacteria_conserved.fasta"
