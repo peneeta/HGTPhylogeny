@@ -8,9 +8,9 @@
 
 #### gyrA Gene ####
 
-GYRA_PATH="./intragenic_conflict/gyrA/subset_gyrA_cds_all_bacteria_conserved.fasta"
-GYRA_ALIGN_PATH="./intragenic_conflict/gyrA/subset_gyrA_aligned.fasta"
-GYRA_TRIMMED_PATH="./intragenic_conflict/gyrA/subset_gyrA_aligned_trimmed.fasta"
+GYRA_PATH="./intragenic_conflict/diverse/gyrA/subset_gyrA_cds_all_bacteria_conserved.fasta"
+GYRA_ALIGN_PATH="./intragenic_conflict/diverse/gyrA/subset_gyrA_aligned.fasta"
+GYRA_TRIMMED_PATH="./intragenic_conflict/diverse/gyrA/subset_gyrA_aligned_trimmed.fasta"
 PHYND_PATH="./phynd/src/phynd.py"
 
 # activate conda env
@@ -28,9 +28,9 @@ trimal -in "$GYRA_ALIGN_PATH" -out "$GYRA_TRIMMED_PATH" -automated1
 
 #### bla Gene ####
 
-BLA_PATH="./intragenic_conflict/bla/bla_cds_all_bacteria.fasta"
-BLA_ALIGN_PATH="./intragenic_conflict/bla/bla_aligned.fasta"
-BLA_TRIMMED_PATH="./intragenic_conflict/bla/bla_aligned_trimmed.fasta"
+BLA_PATH="./intragenic_conflict/diverse/bla/bla_cds_all_bacteria.fasta"
+BLA_ALIGN_PATH="./intragenic_conflict/diverse/bla/bla_aligned.fasta"
+BLA_TRIMMED_PATH="./intragenic_conflict/diverse/bla/bla_aligned_trimmed.fasta"
 PHYND_PATH="./phynd/src/phynd.py"
 
 # activate conda env
@@ -44,13 +44,13 @@ mafft --auto "$BLA_PATH" > "$BLA_ALIGN_PATH"
 trimal -in "$BLA_ALIGN_PATH" -out "$BLA_TRIMMED_PATH" -automated1
 
 # run conflict analysis w plot (sliding window)
-"$PHYND_PATH" -s "$BLA_TRIMMED_PATH" -w 500 -i 100 -t 2 -p
+"$PHYND_PATH" -s "$BLA_TRIMMED_PATH" -w 400 -i 100 -t 2 -p
 
 #### 16S Gene ####
 
-RRNA_PATH="./intragenic_conflict/16S/subset_16s_rRNA_all_bacteria_conserved.fasta"
-RRNA_ALIGN_PATH="./intragenic_conflict/16S/subset_16s_aligned.fasta"
-RRNA_TRIMMED_PATH="./intragenic_conflict/16S/subset_16S_aligned_trimmed.fasta"
+RRNA_PATH="./intragenic_conflict/diverse/16S/subset_16s_rRNA_all_bacteria_conserved.fasta"
+RRNA_ALIGN_PATH="./intragenic_conflict/diverse/16S/subset_16s_aligned.fasta"
+RRNA_TRIMMED_PATH="./intragenic_conflict/diverse/16S/subset_16S_aligned_trimmed.fasta"
 PHYND_PATH="./phynd/src/phynd.py"
 
 # activate conda env
@@ -65,3 +65,24 @@ trimal -in "$RRNA_ALIGN_PATH" -out "$RRNA_TRIMMED_PATH" -automated1
 
 # run conflict analysis w plot (sliding window)
 "$PHYND_PATH" -s "$RRNA_TRIMMED_PATH" -w 500 -i 100 -t 2 -p
+
+
+#### rpoD Gene ####
+
+RPOD_PATH="./intragenic_conflict/diverse/rpoD/rpoD_cds_all_bacteria.fasta"
+RPOD_ALIGN_PATH="./intragenic_conflict/diverse/rpoD/rpoD_aligned.fasta"
+RPOD_TRIMMED_PATH="./intragenic_conflict/diverse/rpoD/rpoD_aligned_trimmed.fasta"
+PHYND_PATH="./phynd/src/phynd.py"
+
+# activate conda env
+conda activate phylo
+
+# perform alignment
+mafft --auto "$RPOD_PATH" > "$RPOD_ALIGN_PATH"
+
+# install trimal to remove poor sequence mappings
+#conda install bioconda::trimal
+trimal -in "$RPOD_ALIGN_PATH" -out "$RPOD_TRIMMED_PATH" -automated1
+
+# run conflict analysis w plot (sliding window)
+"$PHYND_PATH" -s "$RPOD_TRIMMED_PATH" -w 500 -i 100 -t 2 -p
