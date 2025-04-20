@@ -173,7 +173,7 @@ mafft --auto "$BLA_PATH" > "$BLA_ALIGN_PATH"
 trimal -in "$BLA_ALIGN_PATH" -out "$BLA_TRIMMED_PATH" -automated1
 
 # run conflict analysis w plot (sliding window)
-"$PHYND_PATH" -s "$BLA_TRIMMED_PATH" -w 400 -i 100 -t 2 -p
+"$PHYND_PATH" -s "$BLA_TRIMMED_PATH" -w 500 -i 100 -t 2 -p
 
 #### recA Gene ####
 RECA_PATH="./intragenic_conflict/related/recA/recA_cds_all_bacteria.fasta"

@@ -3,206 +3,172 @@ Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
 Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
 
 Host:    Mac (SSE4.2, 16 GB RAM)
-Command: iqtree -nt 2 -m GTR+G -s ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta -alrt 1000 -nm 10000 -bb 1000 -redo
-Seed:    560207 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Sun Apr 20 16:05:54 2025
+Command: iqtree -nt 2 -m GTR+G -s ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta -alrt 1000 -nm 10000 -bb 1000 -redo
+Seed:    642042 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Apr 20 16:21:12 2025
 Kernel:  SSE2 - 2 threads (12 CPU cores detected)
 
-Reading alignment file ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta ... Fasta format detected
-Reading fasta file: done in 0.00115514 secs using 69.17% CPU
+Reading alignment file ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta ... Fasta format detected
+Reading fasta file: done in 0.000332117 secs using 90.63% CPU
 Alignment most likely contains DNA/RNA sequences
-Alignment has 69 sequences with 1059 columns, 636 distinct patterns
-530 parsimony-informative, 53 singleton sites, 476 constant sites
-                                          Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 3.38554e-05 secs using 159.5% CPU
-   1  Escherichia_coli_recA                       0.00%    passed     22.44%
-   2  Shigella_flexneri_recA                      0.47%    passed     19.80%
-   3  Shigella_boydii_recA                        0.00%    passed     20.01%
-   4  Shigella_dysenteriae_recA                   0.00%    passed     20.01%
-   5  Salmonella_enterica_subsp._enterica_recA    0.00%    passed     19.71%
-   6  Salmonella_enterica_subsp._arizonae_recA    0.00%    passed     18.65%
-   7  Salmonella_bongori_recA                     0.00%    passed     91.59%
-   8  Klebsiella_pneumoniae_recA                  0.00%    failed      0.12%
-   9  Klebsiella_variicola_recA                   0.00%    failed      0.02%
-  10  Enterobacter_cloacae_recA                   0.00%    passed     30.45%
-  11  Enterobacter_asburiae_recA                  0.00%    passed      8.14%
-  12  Citrobacter_freundii_recA                   0.00%    passed     98.07%
-  13  Citrobacter_koseri_recA                     0.00%    failed      3.14%
-  14  Citrobacter_braakii_recA                    0.00%    passed     98.68%
-  15  Citrobacter_werkmanii_recA                  0.00%    passed     69.19%
-  16  Citrobacter_amalonaticus_recA               0.00%    passed     28.97%
-  17  Serratia_liquefaciens_recA                  0.00%    passed     37.60%
-  18  Serratia_fonticola_recA                     0.00%    passed     20.98%
-  19  Serratia_plymuthica_recA                    0.00%    passed     63.88%
-  20  Serratia_odorifera_recA                     0.19%    failed      0.93%
-  21  Proteus_mirabilis_recA                      0.57%    failed      0.00%
-  22  Proteus_penneri_recA                       58.36%    failed      0.06%
-  23  Proteus_hauseri_recA                        0.57%    failed      0.00%
-  24  Morganella_morganii_subsp._sibonii_recA     0.19%    passed     67.89%
-  25  Providencia_alcalifaciens_recA              0.09%    failed      0.00%
-  26  Providencia_rustigianii_recA                0.09%    failed      0.00%
-  27  Providencia_heimbachae_recA                 0.09%    failed      0.00%
-  28  Yersinia_pseudotuberculosis_recA            0.00%    failed      0.32%
-  29  Yersinia_rohdei_recA                       49.39%    passed      7.32%
-  30  Yersinia_ruckeri_recA                       0.00%    failed      0.20%
-  31  Pantoea_agglomerans_recA                    0.00%    passed     96.35%
-  32  Pantoea_dispersa_recA                       0.00%    failed      1.88%
-  33  Pantoea_stewartii_recA                      0.00%    passed     71.81%
-  34  Pantoea_brenneri_recA                       0.00%    passed     62.39%
-  35  Erwinia_billingiae_recA                     0.00%    passed     58.49%
-  36  Erwinia_tracheiphila_recA                   0.00%    passed     20.17%
-  37  Erwinia_tasmaniensis_recA                  62.32%    passed     14.94%
-  38  Erwinia_persicina_recA                      0.00%    passed     96.99%
-  39  Cronobacter_turicensis_recA                 0.00%    failed      1.82%
-  40  Cronobacter_muytjensii_recA                 0.00%    failed      2.31%
-  41  Cronobacter_dublinensis_recA                0.00%    failed      0.17%
-  42  Pectobacterium_carotovorum_recA             0.00%    passed     44.52%
-  43  Pectobacterium_atrosepticum_recA           66.01%    passed     61.32%
-  44  Pectobacterium_wasabiae_recA               38.81%    passed      6.11%
-  45  Dickeya_dadantii_recA                      34.37%    passed      5.55%
-  46  Dickeya_solani_recA                         0.00%    passed     66.96%
-  47  Dickeya_zeae_recA                           0.00%    passed     15.47%
-  48  Dickeya_chrysanthemi_recA                  34.37%    passed     47.66%
-  49  Photorhabdus_luminescens_recA              33.43%    failed      0.08%
-  50  Photorhabdus_temperata_recA                 0.57%    failed      0.08%
-  51  Photorhabdus_khanii_recA                   39.00%    failed      1.20%
-  52  Xenorhabdus_nematophila_recA                0.00%    failed      0.02%
-  53  Xenorhabdus_budapestensis_recA              0.00%    failed      0.00%
-  54  Xenorhabdus_poinarii_recA                  11.99%    failed      0.00%
-  55  Xenorhabdus_cabanillasii_recA              11.99%    failed      0.00%
-  56  Edwardsiella_tarda_recA                     0.57%    failed      0.00%
-  57  Edwardsiella_ictaluri_recA                  0.57%    failed      0.11%
-  58  Edwardsiella_hoshinae_recA                  0.57%    failed      0.03%
-  59  Edwardsiella_piscicida_recA                 0.57%    failed      0.00%
-  60  Hafnia_paralvei_recA                        0.00%    failed      0.09%
-  61  Cedecea_davisae_recA                        0.00%    passed     22.65%
-  62  Cedecea_lapagei_recA                        0.00%    failed      0.96%
-  63  Cedecea_neteri_recA                         0.00%    passed     48.05%
-  64  Obesumbacterium_proteus_recA                1.61%    passed     11.82%
-  65  Leclercia_adecarboxylata_recA               0.00%    passed     55.56%
-  66  Raoultella_ornithinolytica_recA             0.00%    passed      8.41%
-  67  Raoultella_planticola_recA                  0.00%    passed      7.71%
-  68  Kluyvera_intermedia_recA                    0.00%    passed     87.77%
-  69  Buttiauxella_agrestis_recA                  0.00%    passed     58.92%
-WARNING: 3 sequences contain more than 50% gaps/ambiguity
-****  TOTAL                                       6.47%  29 sequences failed composition chi2 test (p-value<5%; df=3)
-NOTE: Shigella_dysenteriae_recA is identical to Shigella_boydii_recA but kept for subsequent analysis
+Alignment has 39 sequences with 672 columns, 637 distinct patterns
+635 parsimony-informative, 16 singleton sites, 21 constant sites
+                                         Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.71797e-05 secs using 150.8% CPU
+   1  Escherichia_albertii_bla                   6.99%    passed     74.58%
+   2  Escherichia_fergusonii_bla                 0.00%    passed     54.28%
+   3  Shigella_flexneri_bla                      0.00%    passed     54.28%
+   4  Shigella_sonnei_bla                        0.00%    failed      0.76%
+   5  Shigella_dysenteriae_bla                  12.95%    passed      7.57%
+   6  Salmonella_enterica_subsp._arizonae_bla    6.25%    passed     13.73%
+   7  Salmonella_bongori_bla                     6.25%    passed     11.94%
+   8  Klebsiella_pneumoniae_bla                  6.99%    passed     80.56%
+   9  Klebsiella_oxytoca_bla                     0.00%    failed      0.82%
+  10  Klebsiella_variicola_bla                   0.00%    failed      0.00%
+  11  Klebsiella_michiganensis_bla              11.01%    failed      0.00%
+  12  Enterobacter_cloacae_bla                  18.60%    passed     40.61%
+  13  Enterobacter_asburiae_bla                  0.00%    failed      0.00%
+  14  Citrobacter_freundii_bla                  12.95%    failed      2.27%
+  15  Citrobacter_koseri_bla                     0.00%    passed     14.91%
+  16  Citrobacter_braakii_bla                   23.21%    passed     58.52%
+  17  Citrobacter_werkmanii_bla                 12.95%    passed      7.57%
+  18  Citrobacter_amalonaticus_bla               0.00%    failed      0.00%
+  19  Serratia_marcescens_bla                    1.19%    failed      0.00%
+  20  Serratia_liquefaciens_bla                  0.00%    failed      0.00%
+  21  Proteus_mirabilis_bla                      0.00%    failed      0.30%
+  22  Proteus_penneri_bla                        0.00%    failed      0.00%
+  23  Providencia_stuartii_bla                  18.60%    passed     40.61%
+  24  Providencia_rettgeri_bla                   0.00%    failed      0.34%
+  25  Yersinia_enterocolitica_bla                0.00%    passed      8.59%
+  26  Yersinia_rohdei_bla                        0.00%    passed     97.94%
+  27  Pantoea_agglomerans_bla                    0.74%    passed     14.15%
+  28  Pantoea_stewartii_bla                      0.00%    failed      0.07%
+  29  Erwinia_persicina_bla                      0.15%    failed      0.00%
+  30  Pectobacterium_brasiliense_bla             0.00%    passed     25.24%
+  31  Dickeya_solani_bla                         0.00%    passed     30.68%
+  32  Xenorhabdus_nematophila_bla                0.00%    failed      0.11%
+  33  Xenorhabdus_budapestensis_bla              0.00%    failed      0.00%
+  34  Edwardsiella_tarda_bla                     2.23%    passed     76.21%
+  35  Hafnia_alvei_bla                           0.00%    failed      0.00%
+  36  Hafnia_paralvei_bla                        0.00%    failed      0.00%
+  37  Raoultella_ornithinolytica_bla             0.00%    failed      0.00%
+  38  Raoultella_planticola_bla                 18.60%    passed     40.61%
+  39  Kluyvera_intermedia_bla                    1.79%    passed     19.36%
+****  TOTAL                                      4.14%  19 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Shigella_flexneri_bla is identical to Escherichia_fergusonii_bla but kept for subsequent analysis
+NOTE: Citrobacter_werkmanii_bla is identical to Shigella_dysenteriae_bla but kept for subsequent analysis
+NOTE: Providencia_stuartii_bla is identical to Enterobacter_cloacae_bla but kept for subsequent analysis
+NOTE: Citrobacter_amalonaticus_bla is identical to Enterobacter_asburiae_bla but kept for subsequent analysis
+NOTE: 3 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Raoultella_planticola_bla (identical to Enterobacter_cloacae_bla) is ignored but added at the end
+NOTE: Serratia_liquefaciens_bla (identical to Enterobacter_asburiae_bla) is ignored but added at the end
+NOTE: Hafnia_paralvei_bla (identical to Enterobacter_asburiae_bla) is ignored but added at the end
+Alignment was printed to ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.uniqueseq.phy
 
-Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
-Generating 1000 samples for ultrafast bootstrap (seed: 560207)...
+For your convenience alignment with unique sequences printed to ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.uniqueseq.phy
 
-NOTE: 8 MB RAM (0 GB) is required!
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 642042)...
+
+NOTE: 5 MB RAM (0 GB) is required!
 Estimate model parameters (epsilon = 0.100)
-1. Initial log-likelihood: -24518.852
-2. Current log-likelihood: -22283.570
-3. Current log-likelihood: -22234.969
-4. Current log-likelihood: -22231.787
-5. Current log-likelihood: -22230.961
-6. Current log-likelihood: -22230.760
-Optimal log-likelihood: -22230.659
-Rate parameters:  A-C: 0.80562  A-G: 2.94943  A-T: 0.69984  C-G: 0.83255  C-T: 7.56489  G-T: 1.00000
-Base frequencies:  A: 0.262  C: 0.233  G: 0.282  T: 0.223
-Gamma shape alpha: 0.351
-Parameters optimization took 6 rounds (0.389 sec)
+1. Initial log-likelihood: -15146.928
+2. Current log-likelihood: -14664.579
+3. Current log-likelihood: -14643.793
+4. Current log-likelihood: -14641.769
+5. Current log-likelihood: -14641.458
+Optimal log-likelihood: -14641.327
+Rate parameters:  A-C: 2.94634  A-G: 4.38150  A-T: 1.39439  C-G: 2.24670  C-T: 6.54859  G-T: 1.00000
+Base frequencies:  A: 0.260  C: 0.240  G: 0.272  T: 0.228
+Gamma shape alpha: 0.844
+Parameters optimization took 5 rounds (0.141 sec)
 Wrote distance file to... 
 Computing ML distances based on estimated model parameters...
-Calculating distance matrix: done in 0.00682998 secs using 195.7% CPU
-Computing ML distances took 0.006954 sec (of wall-clock time) 0.013500 sec (of CPU time)
-Setting up auxiliary I and S matrices: done in 8.10623e-05 secs using 223.3% CPU
-Computing RapidNJ tree took 0.001740 sec (of wall-clock time) 0.001894 sec (of CPU time)
-Log-likelihood of RapidNJ tree: -22251.539
+Calculating distance matrix: done in 0.00205803 secs using 197.4% CPU
+Computing ML distances took 0.002155 sec (of wall-clock time) 0.004156 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 5.31673e-05 secs using 176.8% CPU
+Computing RapidNJ tree took 0.000975 sec (of wall-clock time) 0.000735 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -14679.314
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Generating 98 parsimony trees... 0.502 second
-Computing log-likelihood of 98 initial trees ... 0.975 seconds
-Current best score: -22214.841
+Generating 98 parsimony trees... 0.205 second
+Computing log-likelihood of 98 initial trees ... 0.477 seconds
+Current best score: -14641.327
 
 Do NNI search on 20 best initial trees
 Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 1: -22168.979
-Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 2: -22163.383
-Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 3: -22161.620
-Iteration 10 / LogL: -22171.987 / Time: 0h:0m:4s
-Iteration 20 / LogL: -22171.465 / Time: 0h:0m:7s
-Finish initializing candidate tree set (18)
-Current best tree score: -22161.620 / CPU time: 6.590
+BETTER TREE FOUND at iteration 1: -14606.138
+Iteration 10 / LogL: -14613.539 / Time: 0h:0m:2s
+Iteration 20 / LogL: -14606.141 / Time: 0h:0m:4s
+Finish initializing candidate tree set (4)
+Current best tree score: -14606.138 / CPU time: 3.982
 Number of iterations: 20
 --------------------------------------------------------------------
 |               OPTIMIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
 Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 21: -22158.649
+BETTER TREE FOUND at iteration 22: -14605.850
+Iteration 30 / LogL: -14606.142 / Time: 0h:0m:5s (0h:0m:18s left)
 Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 29: -22158.092
-Iteration 30 / LogL: -22160.903 / Time: 0h:0m:10s (0h:0m:34s left)
-UPDATE BEST LOG-LIKELIHOOD: -22158.087
-UPDATE BEST LOG-LIKELIHOOD: -22158.085
-Iteration 40 / LogL: -22158.575 / Time: 0h:0m:13s (0h:0m:30s left)
-BETTER TREE FOUND at iteration 41: -22158.084
-UPDATE BEST LOG-LIKELIHOOD: -22158.084
-Iteration 50 / LogL: -22158.600 / Time: 0h:0m:16s (0h:0m:30s left)
-Log-likelihood cutoff on original alignment: -22201.686
-UPDATE BEST LOG-LIKELIHOOD: -22158.084
-Iteration 60 / LogL: -22158.084 / Time: 0h:0m:19s (0h:0m:26s left)
-Iteration 70 / LogL: -22159.930 / Time: 0h:0m:22s (0h:0m:23s left)
-UPDATE BEST LOG-LIKELIHOOD: -22158.084
-UPDATE BEST LOG-LIKELIHOOD: -22158.084
-Iteration 80 / LogL: -22158.084 / Time: 0h:0m:25s (0h:0m:19s left)
-Iteration 90 / LogL: -22163.993 / Time: 0h:0m:28s (0h:0m:16s left)
-UPDATE BEST LOG-LIKELIHOOD: -22158.084
-Iteration 100 / LogL: -22160.368 / Time: 0h:0m:31s (0h:0m:13s left)
-Log-likelihood cutoff on original alignment: -22201.686
-NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
-Iteration 110 / LogL: -22158.085 / Time: 0h:0m:34s (0h:0m:28s left)
-Iteration 120 / LogL: -22165.863 / Time: 0h:0m:37s (0h:0m:25s left)
-UPDATE BEST LOG-LIKELIHOOD: -22158.084
-Iteration 130 / LogL: -22160.044 / Time: 0h:0m:40s (0h:0m:21s left)
-Iteration 140 / LogL: -22158.572 / Time: 0h:0m:43s (0h:0m:18s left)
-TREE SEARCH COMPLETED AFTER 142 ITERATIONS / Time: 0h:0m:43s
+UPDATE BEST LOG-LIKELIHOOD: -14605.674
+Iteration 40 / LogL: -14612.931 / Time: 0h:0m:7s (0h:0m:14s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -14605.599
+Iteration 50 / LogL: -14606.652 / Time: 0h:0m:8s (0h:0m:12s left)
+Log-likelihood cutoff on original alignment: -14641.649
+Iteration 60 / LogL: -14605.643 / Time: 0h:0m:10s (0h:0m:10s left)
+Iteration 70 / LogL: -14611.082 / Time: 0h:0m:11s (0h:0m:8s left)
+Iteration 80 / LogL: -14606.532 / Time: 0h:0m:12s (0h:0m:6s left)
+Iteration 90 / LogL: -14606.627 / Time: 0h:0m:14s (0h:0m:5s left)
+Iteration 100 / LogL: -14606.537 / Time: 0h:0m:15s (0h:0m:3s left)
+Log-likelihood cutoff on original alignment: -14641.842
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Iteration 110 / LogL: -14606.632 / Time: 0h:0m:17s (0h:0m:14s left)
+Iteration 120 / LogL: -14606.359 / Time: 0h:0m:18s (0h:0m:12s left)
+TREE SEARCH COMPLETED AFTER 123 ITERATIONS / Time: 0h:0m:18s
 
 --------------------------------------------------------------------
 |                    FINALIZING TREE SEARCH                        |
 --------------------------------------------------------------------
 Performs final model parameters optimization
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -22158.084
-Optimal log-likelihood: -22158.075
-Rate parameters:  A-C: 0.85291  A-G: 3.11510  A-T: 0.67781  C-G: 0.85890  C-T: 8.56789  G-T: 1.00000
-Base frequencies:  A: 0.262  C: 0.233  G: 0.282  T: 0.223
-Gamma shape alpha: 0.351
-Parameters optimization took 1 rounds (0.025 sec)
-BEST SCORE FOUND : -22158.075
+1. Initial log-likelihood: -14605.599
+Optimal log-likelihood: -14605.595
+Rate parameters:  A-C: 2.96354  A-G: 4.47607  A-T: 1.34283  C-G: 2.19580  C-T: 6.77198  G-T: 1.00000
+Base frequencies:  A: 0.260  C: 0.240  G: 0.272  T: 0.228
+Gamma shape alpha: 0.839
+Parameters optimization took 1 rounds (0.013 sec)
+BEST SCORE FOUND : -14605.595
 
 Testing tree branches by SH-like aLRT with 1000 replicates...
-0.438 sec.
+0.153 sec.
 Creating bootstrap support values...
-Split supports printed to NEXUS file ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta.splits.nex
-Total tree length: 11.985
+Split supports printed to NEXUS file ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.splits.nex
+Total tree length: 20.869
 
-Total number of iterations: 142
-CPU time used for tree search: 45.628 sec (0h:0m:45s)
-Wall-clock time used for tree search: 43.393 sec (0h:0m:43s)
-Total CPU time used: 47.266 sec (0h:0m:47s)
-Total wall-clock time used: 44.456 sec (0h:0m:44s)
+Total number of iterations: 123
+CPU time used for tree search: 19.557 sec (0h:0m:19s)
+Wall-clock time used for tree search: 18.615 sec (0h:0m:18s)
+Total CPU time used: 20.237 sec (0h:0m:20s)
+Total wall-clock time used: 19.086 sec (0h:0m:19s)
 
 Computing bootstrap consensus tree...
-Reading input file ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta.splits.nex...
-69 taxa and 309 splits.
-Consensus tree written to ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta.contree
-Reading input trees file ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta.contree
-Log-likelihood of consensus tree: -22158.592
+Reading input file ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.splits.nex...
+36 taxa and 219 splits.
+Consensus tree written to ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.contree
+Reading input trees file ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.contree
+Log-likelihood of consensus tree: -14605.606
 
 Analysis results written to: 
-  IQ-TREE report:                ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta.iqtree
-  Maximum-likelihood tree:       ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta.treefile
-  Likelihood distances:          ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta.mldist
+  IQ-TREE report:                ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.iqtree
+  Maximum-likelihood tree:       ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.treefile
+  Likelihood distances:          ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.mldist
 
 Ultrafast bootstrap approximation results written to:
-  Split support values:          ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta.splits.nex
-  Consensus tree:                ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta.contree
-  Screen log file:               ./intragenic_conflict/related/recA/recA_aligned_trimmed.fasta.log
+  Split support values:          ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.splits.nex
+  Consensus tree:                ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.contree
+  Screen log file:               ./intragenic_conflict/related/bla/bla_aligned_trimmed.fasta.log
 
-Date and Time: Sun Apr 20 16:06:39 2025
+Date and Time: Sun Apr 20 16:21:31 2025
