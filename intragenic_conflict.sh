@@ -193,3 +193,23 @@ trimal -in "$RECA_ALIGN_PATH" -out "$RECA_TRIMMED_PATH" -automated1
 
 # run conflict analysis w plot (sliding window)
 "$PHYND_PATH" -s "$RECA_TRIMMED_PATH" -w 500 -i 100 -t 2 -p
+
+#### 16S Gene ####
+
+RRNA_PATH="./intragenic_conflict/related/16S/16s_rRNA_all_bacteria.fasta"
+RRNA_ALIGN_PATH="./intragenic_conflict/related/16S/16s_aligned.fasta"
+RRNA_TRIMMED_PATH="./intragenic_conflict/related/16S/16S_aligned_trimmed.fasta"
+PHYND_PATH="./phynd/src/phynd.py"
+
+# activate conda env
+conda activate phylo
+
+# perform alignment
+mafft --auto "$RRNA_PATH" > "$RRNA_ALIGN_PATH"
+
+# install trimal to remove poor sequence mappings
+#conda install bioconda::trimal
+trimal -in "$RRNA_ALIGN_PATH" -out "$RRNA_TRIMMED_PATH" -automated1
+
+# run conflict analysis w plot (sliding window)
+"$PHYND_PATH" -s "$RRNA_TRIMMED_PATH" -w 1000 -i 100 -t 2 -p
