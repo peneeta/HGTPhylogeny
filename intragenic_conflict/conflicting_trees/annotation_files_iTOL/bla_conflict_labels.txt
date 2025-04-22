@@ -1,0 +1,9 @@
+DATASET_COLORSTRIP
+SEPARATOR TAB
+DATASET_LABEL	Blue-highlighted labels
+COLOR	#000000
+DATA
+Hafnia_paralvei_bla	#0000FF
+Serratia_liquefaciens_bla	#0000FF
+Citrobacter_amalonaticus_bla	#0000FF
+Enterobacter_asburiae_bla	#0000FF

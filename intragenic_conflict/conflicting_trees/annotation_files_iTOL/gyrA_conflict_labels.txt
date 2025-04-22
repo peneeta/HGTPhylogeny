@@ -1,0 +1,62 @@
+DATASET_COLORSTRIP
+#-----------------------------------------------------------------#
+# Template used to add colored strips to the tree                 #
+# Lines starting with # are comments and ignored during parsing   #
+#-----------------------------------------------------------------#
+
+#SEPARATOR (TAB, SPACE or COMMA)
+#SEPARATOR TAB would specify TAB separated fields, recommended for labels containing spaces
+SEPARATOR TAB
+
+#DATASET_LABEL: The name of the dataset (shown in the control panel)
+DATASET_LABEL	Genus_Group
+
+#COLOR: Default color for labels not found in the dataset (optional)
+COLOR	#dddddd
+
+#=================================================================#
+# Style options                                                   #
+#=================================================================#
+#STRIP_WIDTH: width of the strip in pixels (default: 20)
+#STRIP_WIDTH	30
+
+#COLOR_BRANCHES: set to 1 to color the branches ending in the colored range (default: 0)
+#COLOR_BRANCHES	1
+
+#=================================================================#
+# Legend (displayed in the web page legend)                       #
+#=================================================================#
+#LEGEND_TITLE: Dataset legend title
+LEGEND_TITLE	Genus Group
+
+#LEGEND_SHAPES: Shapes used in the legend: 1 for squares, 2 for circles, 3 for stars
+#You need one shape definition per legend label below
+LEGEND_SHAPES	1	1
+
+#LEGEND_COLORS: Colors used in the legend shapes
+#You need one color definition per legend label below
+LEGEND_COLORS	#FF0000	#0000FF
+
+#LEGEND_LABELS: Labels used in the legend
+#You need one label definition per legend shape/color above
+LEGEND_LABELS	Salmonella	Pantoea
+
+#=================================================================#
+# Actual data follows after the DATA keyword                      #
+# Lines starting with # are comments                              #
+#                                                                 #
+# Format:                                                         #
+# Node_ID	Color                                                  #
+#                                                                 #
+# Colors can be specified using hexadecimal RRGGBB notation       #
+# (like #FF0000 for red) or standard color names (like 'red')     #
+#=================================================================#
+DATA
+# Node IDs	Color (Red for Salmonella, Blue for Pantoea)
+Salmonella_enterica_subsp._arizonae_gyrA	#FF0000
+Salmonella_enterica_subsp._enterica_gyrA	#FF0000
+Salmonella_bongori_gyrA	#FF0000
+Pantoea_agglomerans_gyrA	#0000FF
+Pantoea_dispersa_gyrA	#0000FF
+Pantoea_brenneri_gyrA	#0000FF
+Pantoea_stewartii_gyrA	#0000FF
