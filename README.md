@@ -3,7 +3,8 @@ Course Project for Fundamentals of Bioinformatics @ CMU\
 *Amanda Qi and Peneeta Wojcik*
 
 ## Project Description
-TODO
+The objective of this work is to detect and interpret tree topology conflicts in both gene segment and full gene transfer events to resolve the evolutionary histories of bacterial species. We include analyses for intragenic conflict and code used to query the NCBI Entrez database. 
+
 
 ## Files
 * [Data directory](Data) - contains bacterial metadata, 16S, and gyrA fasta sequences (rpoD is present also but was not used in the analysis). The subset 16S and gyrA are paired - they contain the same species in both files for phylogenetic tree comparisons.
